@@ -1,0 +1,481 @@
+{
+  "common": {
+    "console": {
+      "plugins": {
+        "execute-failed": "Απέτυχε η εκτέλεση του πρόσθετου {{pluginName}}::{{contextName}}",
+        "executed-at-ms": "Το πρόσθετο {{pluginName}}::{{contextName}} εκτελέστηκε σε {{ms}}ms",
+        "initialize-failed": "Απέτυχε η αρχικοποίηση του πρόσθετου \"{{pluginName}}\"",
+        "load-all": "Φόρτωση όλων των πρόσθετων",
+        "load-failed": "Απέτυχε η φόρτωση του πρόσθετου \"{{pluginName}}\"",
+        "loaded": "Το πρόσθετο \"{{pluginName}}\" φορτώθηκε",
+        "unload-failed": "Απέτυχε η απεγκατάσταση του πρόσθετου \"{{pluginName}}\"",
+        "unloaded": "Το πρόσθετο \"{{pluginName}}\" απεγκαταστάθηκε"
+      }
+    }
+  },
+  "language": {
+    "code": "el",
+    "local-name": "Ελληνικά",
+    "name": "Greek"
+  },
+  "main": {
+    "console": {
+      "did-finish-load": {
+        "dev-tools": "Η φόρτωση ολοκληρώθηκε. Τα DevTools άνοιξαν"
+      },
+      "i18n": {
+        "loaded": "Το i18n φορτώθηκε"
+      },
+      "second-instance": {
+        "receive-command": "Λήφθηκε εντολή μέσω πρωτοκόλλου: \"{{command}}\""
+      },
+      "theme": {
+        "css-file-not-found": "Το αρχείο CSS \"{{cssFile}}\" δεν υπάρχει, αγνοείται"
+      },
+      "unresponsive": {
+        "details": "Σφάλμα ανταπόκρισης!\n{{error}}"
+      },
+      "when-ready": {
+        "clearing-cache-after-20s": "Εκκαθάριση μνήμης cache εφαρμογής"
+      },
+      "window": {
+        "tried-to-render-offscreen": "Το παράθυρο προσπάθησε να απεικονίσει εκτός οθόνης, windowSize={{windowSize}}, displaySize={{displaySize}}, position={{position}}"
+      }
+    },
+    "dialog": {
+      "hide-menu-enabled": {
+        "detail": "Το μενού είναι κρυμμένο, χρησιμοποιήστε το 'Alt' για να το εμφανίσετε (ή το 'Escape' αν χρησιμοποιείτε το μενού εφαρμογής)",
+        "message": "Η απόκρυψη μενού είναι ενεργοποιημένη",
+        "title": "Η απόκρυψη μενού ενεργοποιήθηκε"
+      },
+      "need-to-restart": {
+        "buttons": {
+          "later": "Αργότερα",
+          "restart-now": "Επανεκκίνηση τώρα"
+        },
+        "detail": "Το πρόσθετο \"{{pluginName}}\" απαιτεί επανεκκίνηση για να ισχύσει",
+        "message": "Το \"{{pluginName}}\" χρειάζεται επανεκκίνηση",
+        "title": "Απαιτείται επανεκκίνηση"
+      },
+      "unresponsive": {
+        "buttons": {
+          "quit": "Έξοδος",
+          "relaunch": "Επανεκκίνηση",
+          "wait": "Περιμένετε"
+        },
+        "detail": "Λυπούμαστε για την ταλαιπωρία! Παρακαλούμε επιλέξτε τι να κάνετε:",
+        "message": "Η εφαρμογή δεν ανταποκρίνεται",
+        "title": "Το παράθυρο δεν ανταποκρίνεται"
+      },
+      "update-available": {
+        "buttons": {
+          "disable": "Απενεργοποίηση ενημερώσεων",
+          "download": "Λήψη",
+          "ok": "OK"
+        },
+        "detail": "Μια νέα έκδοση είναι διαθέσιμη και μπορεί να ληφθεί από τον σύνδεσμο {{downloadLink}}",
+        "message": "Μια νέα έκδοση είναι διαθέσιμη",
+        "title": "Υπάρχει διαθέσιμη ενημέρωση"
+      }
+    },
+    "menu": {
+      "about": "Σχετικά",
+      "navigation": {
+        "label": "Πλοήγηση",
+        "submenu": {
+          "copy-current-url": "Αντιγραφή τρέχουσας διεύθυνσης URL",
+          "go-back": "Πήγαινε πίσω",
+          "go-forward": "Πήγαινε μπροστά",
+          "quit": "Έξοδος",
+          "restart": "Επανεκκίνηση εφαρμογής"
+        }
+      },
+      "options": {
+        "label": "Επιλογές",
+        "submenu": {
+          "advanced-options": {
+            "label": "Προηγμένες επιλογές",
+            "submenu": {
+              "auto-reset-app-cache": "Επαναφορά της cache της εφαρμογής κατά την εκκίνηση της εφαρμογής",
+              "disable-hardware-acceleration": "Απενεργοποίηση επιτάχυνσης υλικού",
+              "edit-config-json": "Επεξεργασία του config.json",
+              "override-user-agent": "Αντικατάσταση του User-Agent",
+              "restart-on-config-changes": "Επανεκκίνηση κατά τις αλλαγές στο config",
+              "set-proxy": {
+                "label": "Ορισμός διακομιστή μεσολάβησης (proxy)",
+                "prompt": {
+                  "label": "Εισαγωγή διεύθυνσης διακομιστή μεσολάβησης (proxy): (αφήστε κενό για απενεργοποίηση)",
+                  "placeholder": "Παράδειγμα: SOCKS5://127.0.0.1:9999",
+                  "title": "Ορισμός μεσολάβησης"
+                }
+              },
+              "toggle-dev-tools": "Εναλλαγή DevTools"
+            }
+          },
+          "always-on-top": "Πάντα επάνω",
+          "auto-update": "Αυτόματη Ενημέρωση",
+          "hide-menu": {
+            "dialog": {
+              "message": "Το μενού θα κρυφτεί στην επόμενη εκκίνηση, χρησιμοποιήστε [Alt] για να το εμφανίσετε (ή το πλήκτρο backtick [`] αν χρησιμοποιείτε το μενού εφαρμογής)",
+              "title": "Η Δυνατότητα Απόκρυψης του Μενού ενεργοποιήθηκε"
+            },
+            "label": "Απόκρυψη Μενού"
+          },
+          "language": {
+            "dialog": {
+              "message": "Η γλώσσα θα αλλάξει μετά την επανεκκίνηση",
+              "title": "Η γλώσσα άλλαξε"
+            },
+            "label": "Γλώσσα",
+            "submenu": {
+              "to-help-translate": "Θέλετε να βοηθήσετε στη μετάφραση; Κάντε κλικ εδώ"
+            }
+          },
+          "resume-on-start": "Συνέχιση του τελευταίου τραγουδιού όταν η εφαρμογή ξεκινά",
+          "single-instance-lock": "Κλείδωμα Μοναδικής Εκδοχής",
+          "start-at-login": "Έναρξη κατά την σύνδεση",
+          "starting-page": {
+            "label": "Σελίδα έναρξης",
+            "unset": "Κατάργηση ορισμού"
+          },
+          "tray": {
+            "label": "Δίσκος",
+            "submenu": {
+              "disabled": "Απενεργοποιημένο",
+              "enabled-and-hide-app": "Ενεργοποιημένο και απόκρυψη της εφαρμογής",
+              "enabled-and-show-app": "Ενεργοποιημένο και εμφάνιση της εφαρμογής",
+              "play-pause-on-click": "Αναπαραγωγή/Παύση με κλικ"
+            }
+          },
+          "visual-tweaks": {
+            "label": "Τροποποιήσεις Εμφάνισης",
+            "submenu": {
+              "like-buttons": {
+                "default": "Default",
+                "force-show": "Αναγκαστική Εμφάνιση",
+                "hide": "Απόκρυψη",
+                "label": "Μου αρέσει"
+              },
+              "remove-upgrade-button": "Αφαίρεση κουμπιού αναβάθμισης",
+              "theme": {
+                "dialog": {
+                  "button": {
+                    "cancel": "Άκυρο",
+                    "remove": "Αφαίρεση"
+                  },
+                  "remove-theme": "Είστε βέβαιοι ότι θέλετε να αφαιρέσετε το προσαρμοσμένο θέμα;",
+                  "remove-theme-message": "Αυτό θα αφαιρέσει το προσαρμοσμένο θέμα"
+                },
+                "label": "Θέμα",
+                "submenu": {
+                  "import-css-file": "Εισαγωγή προσαρμοσμένου αρχείου CSS",
+                  "no-theme": "No theme"
+                }
+              }
+            }
+          }
+        }
+      },
+      "plugins": {
+        "enabled": "Ενεργοποιημένο",
+        "label": "Πρόσθετα",
+        "new": "ΝΕΟ"
+      },
+      "view": {
+        "label": "Προβολή",
+        "submenu": {
+          "force-reload": "Αναγκαστική Eπαναφόρτωση",
+          "reload": "Επαναφόρτωση",
+          "reset-zoom": "Πραγματικό μέγεθος",
+          "toggle-fullscreen": "Εναλλαγή Πλήρους Οθόνης",
+          "zoom-in": "Μεγέθυνση",
+          "zoom-out": "Σμίκρυνση"
+        }
+      }
+    },
+    "tray": {
+      "next": "Επόμενο",
+      "play-pause": "Αναπαραγωγή/Παύση",
+      "previous": "Προηγούμενο",
+      "quit": "Έξοδος",
+      "restart": "Επανεκκίνηση εφαρμογής",
+      "show": "Εμφάνιση παραθύρου",
+      "tooltip": {
+        "default": "YouTube Music",
+        "with-song-info": "YouTube Music: {{artist}} - {{title}}"
+      }
+    }
+  },
+  "plugins": {
+    "ad-speedup": {
+      "description": "Εαν παίξει διαφήμιση κάνει σίγαση του ήχου και θέτει την ταχύτητα αναπαραγωγής στο 16x",
+      "name": "Γρήγορη Προώθηση Διαφημίσεων"
+    },
+    "adblocker": {
+      "description": "Αποκλεισμός όλων των διαφημίσεων και tracker",
+      "menu": {
+        "blocker": "Μέθοδος αποκλεισμού"
+      },
+      "name": "Μπλοκάρισμα Διαφημίσεων"
+    },
+    "album-actions": {
+      "description": "Προσθέτει κουμπιά Like/Unlike και Dislike/Undislike που δρουν συνολικά σε όλα τα κομμάτια μιας playlist ή ενός άλμπουμ",
+      "name": "Ενέργειες σε Άλμπουμ"
+    },
+    "album-color-theme": {
+      "description": "Εφαρμόζει ένα δυναμικό θέμα και εφέ με βάση τη χρωματική παλέτα του άλμπουμ",
+      "menu": {
+        "color-mix-ratio": {
+          "label": "Αναλογία μίξης χρώματος",
+          "submenu": {
+            "percent": "{{ratio}}%"
+          }
+        }
+      },
+      "name": "Album Color Theme"
+    },
+    "ambient-mode": {
+      "description": "Εφαρμόζει ένα εφέ φωτισμού ρίχνοντας απαλά χρώματα από το βίντεο, στο φόντο της οθόνης σας.",
+      "menu": {
+        "blur-amount": {
+          "label": "Ένταση θαμπώματος",
+          "submenu": {
+            "pixels": "{{blurAmount}} pixels"
+          }
+        },
+        "buffer": {
+          "label": "Buffer",
+          "submenu": {
+            "buffer": "{{buffer}}"
+          }
+        },
+        "opacity": {
+          "label": "Αδιαφάνεια",
+          "submenu": {
+            "percent": "{{opacity}}%"
+          }
+        },
+        "quality": {
+          "label": "Ποιότητα",
+          "submenu": {
+            "pixels": "{{quality}} pixels"
+          }
+        },
+        "size": {
+          "label": "Μέγεθος",
+          "submenu": {
+            "percent": "{{size}}%"
+          }
+        },
+        "smoothness-transition": {
+          "submenu": {
+            "during": "Σε {{interpolationTime}} δευτερόλεπτα"
+          }
+        },
+        "use-fullscreen": {
+          "label": "Χρήση πλήρους οθόνης"
+        }
+      }
+    },
+    "audio-compressor": {
+      "description": "Συμπίεση ήχου (μειώνει την ένταση των πιο δυνατών τμημάτων του κύματος και αυξάνει την ένταση των πιο μαλακών τμημάτων)"
+    },
+    "blur-nav-bar": {
+      "description": "Κάνει τη γραμμή πλοήγησης διαφανή και θολή"
+    },
+    "bypass-age-restrictions": {
+      "description": "Παράκαμψη της επαλήθευσης ηλικίας του YouTube"
+    },
+    "captions-selector": {
+      "prompt": {
+        "selector": {
+          "none": "None"
+        }
+      }
+    },
+    "compact-sidebar": {
+      "description": "Να είναι πάντα συμπαγές το sidebar"
+    },
+    "crossfade": {
+      "menu": {
+        "advanced": "Για προχωρημένους"
+      },
+      "prompt": {
+        "options": {
+          "multi-input": {
+            "fade-scaling": {
+              "linear": "Γραμμική",
+              "logarithmic": "Λογαριθμική"
+            }
+          }
+        }
+      }
+    },
+    "disable-autoplay": {
+      "description": "Κάνει τα τραγούδια να είναι αυτόματα σε παύση",
+      "menu": {
+        "apply-once": "Εφαρμόζεται μόνο στο πρώτο τραγούδι"
+      },
+      "name": "Απενεργοποίηση αυτόματης αναπαραγωγής"
+    },
+    "discord": {
+      "description": "Δείξτε στους φίλους σας τι ακούτε με το Rich Presence",
+      "menu": {
+        "auto-reconnect": "Αυτόματη επανασύνδεση",
+        "clear-activity": "Εκκαθάριση δραστηριότητας",
+        "hide-duration-left": "Απόκρυψη της διάρκειας που απομένει",
+        "hide-github-button": "Απόκρυψη του συνδέσμου προς GitHub",
+        "set-inactivity-timeout": "Ορισμός χρονικού ορίου αδράνειας"
+      }
+    },
+    "downloader": {
+      "backend": {
+        "dialog": {
+          "error": {
+            "buttons": {
+              "ok": "OK"
+            },
+            "title": "Error in download!"
+          },
+          "start-download-playlist": {
+            "buttons": {
+              "ok": "OK"
+            },
+            "detail": "{{playlistSize}} τραγούδια)",
+            "message": "Λήψη της λίστας αναπαραγωγής {{playlistTitle}}",
+            "title": "Η λήψη ξεκίνησε"
+          }
+        },
+        "feedback": {
+          "conversion-progress": "Μετατροπή: {{percent}}%",
+          "converting": "Μετατροπή…",
+          "download-info": "Λήψη του {{artist}} - {{title}} [{{videoId}}",
+          "download-progress": "Λήψη: {{percent}}%",
+          "downloading": "Λήψη…",
+          "downloading-counter": "Λήψη {{current}}/{{total}}…",
+          "downloading-playlist": "Λήψη της λίστας αναπαραγωγής \"{{playlistTitle}}\" - {{playlistSize}} τραγούδια ({{playlistId}})",
+          "folder-already-exists": "Ο φάκελος {{playlistFolder}} υπάρχει ήδη",
+          "loading": "Φόρτωση…",
+          "playlist-is-empty": "Η λίστα αναπραγωγής είναι άδεια",
+          "preparing-file": "Προετοιμασία αρχείου…",
+          "saving": "Αποθήκευση…",
+          "video-id-not-found": "Το βίντεο δεν βρέθηκε"
+        }
+      },
+      "menu": {
+        "download-finish-settings": {
+          "prompt": {
+            "last-seconds": "Τελευταία x δευτερόλεπτα"
+          },
+          "submenu": {
+            "percent": "Ποσοστό",
+            "seconds": "Δευτερόλεπτα"
+          }
+        },
+        "download-playlist": "Λήψη λίστας αναπαραγωγής",
+        "skip-existing": "Παράλειψη υπάρχοντων αρχείων"
+      },
+      "templates": {
+        "button": "Λήψη"
+      }
+    },
+    "music-together": {
+      "internal": {
+        "save": "Αποθήκευση",
+        "unknown-user": "Άγνωστος χρήστης"
+      },
+      "menu": {
+        "connected-users": "Συνδεδεμένοι χρήστες"
+      },
+      "toast": {
+        "add-song-failed": "Απέτυχε η προσθήκη τραγουδιού",
+        "remove-song-failed": "Απέτυχε η αφαίρεση τραγουδιού"
+      }
+    },
+    "navigation": {
+      "name": "Πλοήγηση"
+    },
+    "no-google-login": {
+      "name": "No Google Login"
+    },
+    "notifications": {
+      "name": "Ειδοποιήσεις"
+    },
+    "picture-in-picture": {
+      "menu": {
+        "always-on-top": "Πάντα σε πρώτο πλάνο",
+        "hotkey": {
+          "label": "Πλήκτρο πρόσβασης",
+          "prompt": {
+            "keybind-options": {
+              "hotkey": "Πλήκτρο πρόσβασης"
+            }
+          }
+        },
+        "save-window-position": "Αποθήκευση θέσης παραθύρου",
+        "save-window-size": "Αποθήκευση μεγέθους παραθύρου"
+      }
+    },
+    "playback-speed": {
+      "name": "Ταχύτητα αναπαραγωγής",
+      "templates": {
+        "button": "Ταχύτητα"
+      }
+    },
+    "precise-volume": {
+      "prompt": {
+        "global-shortcuts": {
+          "keybind-options": {
+            "decrease": "Μείωση έντασης",
+            "increase": "Αύξηση έντασης"
+          }
+        }
+      }
+    },
+    "quality-changer": {
+      "backend": {
+        "dialog": {
+          "quality-changer": {
+            "detail": "Τρέχουσα ποιότητα: {{quality}}"
+          }
+        }
+      }
+    },
+    "shortcuts": {
+      "prompt": {
+        "keybind": {
+          "keybind-options": {
+            "next": "Επόμενο",
+            "play-pause": "Αναπαραγωγή / Παύση",
+            "previous": "Προηγούμενο"
+          }
+        }
+      }
+    },
+    "sponsorblock": {
+      "name": "SponsorBlock"
+    },
+    "touchbar": {
+      "name": "TouchBar"
+    },
+    "tuna-obs": {
+      "name": "Tuna OBS"
+    },
+    "video-toggle": {
+      "menu": {
+        "align": {
+          "submenu": {
+            "middle": "Middle",
+            "right": "Right"
+          }
+        },
+        "mode": {
+          "label": "Mode"
+        }
+      },
+      "templates": {
+        "button": "Song"
+      }
+    }
+  }
+}
